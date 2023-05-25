@@ -1,38 +1,79 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,700;0,900;1,100;1,200;1,500;1,700;1,800&family=Roboto:wght@100;300;400&display=swap');
+
+*{
+  font-family: 'Roboto',sans-serif;
+}
+
+.head
+{
+  /* width: 70%;
+  margin: auto; */
+
+
+  padding: 15px;
   text-align: center;
+  color: #fff;
+  font-size: x-large;
+  height: 30px;
+  background-color: #635985;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.container
+{
+  background-color: lavender;
+  width: 70%;
+  margin: auto;
   min-height: 100vh;
+  padding: 2vmax;
+}
+
+button{
+  cursor: pointer;
+  background-color: coral;
+}
+
+button:active{
+  background-color: #635985;
+  color: greenyellow;
+}
+.container > form {
+
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+input:focus{
+  outline: none;
+}
+textarea:focus{
+  outline: none;
+
+}
+input,textarea,button
+{
+  margin: 10px;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+
+.task
+{
+  display: flex;
+}
+
+.task > div{
+  width: 100%;
+}
+
+.task button 
+{
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
